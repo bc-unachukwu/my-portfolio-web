@@ -1,0 +1,116 @@
+          
+      .form2 {border: 1px solid #f1f1f1;background-color: #FFFFFF;border-radius: 5%;}
+
+      input[name=pet3] {
+      width: 50%;
+    box-sizing: border-box;
+    border: 0px solid #ccc;
+    border-radius: px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_code_f7ab697e65b83ce9870a4736085deeec.svg');
+    background-position: 5px 5px; 
+    background-size:30px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 40px;
+    border-bottom: 2px solid red;
+    }
+      .inv {
+      display: none;
+       
+    }
+    .ta-right{
+      text-align: center;
+      
+    }
+      .butt2 {
+        background-color: ##1473e6;
+        color: white;
+        padding: 20px 20px;
+        margin: 2px 0;
+        border: none;
+        cursor: pointer;
+        height: 30px;
+        width: 90%;
+        font-size: 16px;
+        border-radius: 15px;
+        
+        
+      }
+      .jc-center {
+        height: 50px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+      .butt2:hover {
+        opacity: 0.8;
+      }
+       
+      .imgcontainer {
+        text-align: center;
+        margin: 12px 0 12px 0;
+        background-color: #FFFFFF;
+        border-radius: 5%;
+      }
+      
+      img.avatar {
+        width: 20%;
+        
+        border-radius: 30%;
+      }
+      :root {
+  --background-gradient: linear-gradient(178deg, #fff33 10%, #3333ff);
+ 
+  --darkgray: #2c3e50;
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 5px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+drop1::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.drop1 {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 2em;
+  border-radius: .25em;
+  overflow: hidden;
+  top: 50%;
+  left : 50%;
+  transform :
+  translate(-50%,-50%); 
+}
+/* Arrow */
+.drop1::after {
+  content: '\25BC';
+  position: absolute;
+  top: 03;
+  right: 5;
+  padding: 0.4em;
+  background-color: blue;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.drop1:hover::after {
+  color: #f39c12;
+}
+
+ 
+     

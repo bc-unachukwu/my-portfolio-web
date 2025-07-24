@@ -1,0 +1,334 @@
+      * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          transition: 2s ease;
+      }
+
+      .weTranfer {
+          background: #023020;
+          height: 100vh;
+          width: 100%;
+          position: fixed;
+          overflow: hidden;
+          font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+              sans-serif;
+      }
+
+      .navWeTransfer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          color: #17181a;
+          font-weight: 500;
+          font-family: -apple-system, ".SFNSText-Regular", "San Francisco",
+              "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+          font-size: 0.875em;
+          letter-spacing: 0;
+          padding: 0 12px;
+          text-decoration: none;
+      }
+
+      .logoSVG svg {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+      }
+
+      .navList {
+          background: white;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      .navList ul {
+          display: flex;
+          align-items: center;
+      }
+
+      .navList ul li {
+          list-style: none;
+          border: 1px solid lightgrey;
+          border-width: 0px 2px 0px 0px;
+          padding: 10px;
+          cursor: pointer;
+      }
+
+      .navList ul li:last-child {
+          border: none;
+      }
+
+      .navList ul li:hover {
+          background: whitesmoke;
+      }
+
+      .formContainer {
+          width: 22%;
+          min-height: auto;
+          margin-top: 5%;
+          margin-left: 5%;
+          background: whitesmoke;
+          overflow: auto;
+          border-radius: 10px;
+          box-shadow: 0px 0px 3px 1px white;
+      }
+
+      .downLoadIcon1 {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          background: #17181a;
+          padding: 10px;
+      }
+
+      .downLoadIcon1 img {
+          width: 50%;
+      }
+
+      .downLoadIcon2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0px;
+      }
+
+      .downLoadIcon2 svg {
+          width: 30%;
+      }
+
+      .weText {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+          position: relative;
+      }
+
+      .weText p {
+          font-size: 1.5rem;
+          margin: 20px 0px 5px 0px;
+      }
+
+      .weText span {
+          font-size: 0.9rem;
+      }
+
+      .weText input {
+          outline: none;
+          background-color: transparent;
+          border-width: 0px 0px 1px 0px;
+          width: 95%;
+          padding: 4px 5px;
+          margin-top: 20px;
+          font-size: 1rem;
+      }
+
+      .weText input::placeholder {
+          text-align: center;
+      }
+
+      #email_input {
+          position: absolute;
+          top: -10px;
+          text-align: center;
+          border: none;
+          margin-top: 0;
+          animation: mail_position 1.5s ease-in-out;
+          font-size: smaller;
+          background-color: #023020;
+          color: whitesmoke;
+      }
+
+      #password_input {
+          animation: pass_show 1.3s ease-in-out;
+      }
+
+      .docDownload {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid lightgrey;
+          border-width: 1px 0px;
+          padding: 10px 20px;
+      }
+
+      .docDownload1 {
+          width: 80%;
+          color: gray;
+      }
+
+      .docDownload2 {
+          width: 10%;
+          display: flex;
+          justify-content: flex-end;
+          border: none;
+      }
+
+      .docDownload2 svg {
+          width: 100%;
+          filter: invert(39%) sepia(100%) saturate(614%) hue-rotate(96deg) brightness(97%) contrast(89%);
+          cursor: pointer;
+      }
+
+      .weTranfer_Button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0px 10px 0px;
+      }
+
+      .weTranfer_Button button {
+          border: none;
+          cursor: pointer;
+          background: rgba(31, 81, 255, 0.8);
+          color: white;
+          padding: 5px 20px;
+          font-size: 1.2rem;
+          border-radius: 5px;
+          transition: 0.3 ease-in-out;
+      }
+
+      .weTranfer_Button button:hover {
+          background: rgba(31, 81, 255, 1);
+      }
+
+      .side_note {
+          position: absolute;
+          top: 25%;
+          color: whitesmoke;
+          right: 2%;
+          width: 60%;
+
+      }
+
+      .side_note h1 {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 3rem;
+      }
+
+      .side_note p {
+          font-size: 1.5rem;
+          margin: 2rem 0rem;
+      }
+
+      .side_note button {
+          font-size: 1.5rem;
+          padding: 0.5rem 1rem;
+          border-radius: 50px;
+          border: none;
+          cursor: pointer;
+          font-weight: bold;
+      }
+
+      /*  animation */
+      @keyframes mail_position {
+          from {
+              transform: translateX(-50%);
+              opacity: 0.3;
+          }
+
+          to {
+              transform: translateX(0%);
+              opacity: 1;
+          }
+      }
+
+      @keyframes pass_show {
+
+          0% {
+              visibility: hidden;
+          }
+
+          100% {
+              visibility: hidden;
+          }
+      }
+
+      /* media */
+      @media (max-width: 1030px) {
+          .formContainer {
+              width: 28%;
+          }
+
+          .side_note {
+              top: 10%;
+              right: 1%;
+          }
+      }
+
+      @media (max-width: 900px) {
+          .formContainer {
+              width: 50%;
+              margin-top: 10%;
+              margin-left: 25%;
+          }
+
+          .side_note {
+              position: static;
+              margin-top: 10%;
+              margin-left: 5%;
+          }
+      }
+
+      @media (max-width: 800px) {
+          .side_note h1 {
+              font-size: 2.5rem;
+          }
+
+          .side_note p,
+          .side_note button {
+              font-size: 1.2rem;
+          }
+      }
+
+      @media (max-width: 700px) {
+          .downLoadIcon1 img {
+              width: 60%;
+          }
+
+          .formContainer {
+              width: 60%;
+              margin-left: 20%;
+          }
+
+          .side_note h1 {
+              font-size: 2rem;
+          }
+
+          .side_note p,
+          .side_note button {
+              font-size: 1rem;
+          }
+      }
+
+      @media (max-width: 500px) {
+          .formContainer {
+              width: 70%;
+              margin-top: 20%;
+              margin-left: 15%;
+          }
+
+          .side_note {
+              display: none;
+          }
+      }
+
+      @media (max-width: 400px) {
+          .weTranfer {
+              overflow: auto;
+          }
+
+          .formContainer {
+              width: 90%;
+              margin: 15% 5% 5% 5%;
+          }
+      }
+
+      @media (max-width: 300px) {
+          .navList {
+              display: none;
+          }
+      }
